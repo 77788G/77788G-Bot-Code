@@ -1,0 +1,18 @@
+#include "main.h"
+#include "definition.h"
+
+using namespace pros;
+
+Controller master(E_CONTROLLER_MASTER);
+
+Motor chassisLF(1, E_MOTOR_GEARSET_18, 0, E_MOTOR_ENCODER_DEGREES);
+Motor chassisLB(2, E_MOTOR_GEARSET_18, 1, E_MOTOR_ENCODER_DEGREES);
+Motor chassisRF(11, E_MOTOR_GEARSET_18, 1, E_MOTOR_ENCODER_DEGREES);
+Motor chassisRB(12, E_MOTOR_GEARSET_18, 0, E_MOTOR_ENCODER_DEGREES);
+Motor intakeL(1, E_MOTOR_GEARSET_18, 0, E_MOTOR_ENCODER_DEGREES);
+Motor intakeR(1, E_MOTOR_GEARSET_18, 1, E_MOTOR_ENCODER_DEGREES);
+Motor lift(20, E_MOTOR_GEARSET_06, 0, E_MOTOR_ENCODER_DEGREES);
+Motor angle(1, E_MOTOR_GEARSET_18, 0, E_MOTOR_ENCODER_DEGREES);
+
+int leftY = master.get_analog(E_CONTROLLER_ANALOG_LEFT_Y);
+int rightY = master.get_analog(E_CONTROLLER_ANALOG_RIGHT_Y);

@@ -1,6 +1,13 @@
 #include "main.h"
-#include "motors.h"
+#include "definition.h"
 
 using namespace pros;
 
-void opcontrol() {}
+void opcontrol(){
+while(true){
+  chassisLF.move(leftY);
+  chassisLB.move(leftY);
+  chassisRF.move(rightY);
+  chassisRB.move(rightY);
+}
+}
