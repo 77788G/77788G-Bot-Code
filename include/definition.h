@@ -9,10 +9,14 @@ extern pros::Motor intakeL;
 extern pros::Motor intakeR;
 extern pros::Motor lift;
 extern pros::Motor angle;
+
+extern pros::Controller master;
+
 extern int leftY;
 extern int leftX;
 extern int rightY;
 extern int rightX;
+
 extern bool controlA;
 extern bool controlB;
 extern bool controlX;
@@ -25,4 +29,3 @@ extern bool controlL1;
 extern bool controlL2;
 extern bool controlR1;
 extern bool controlR2;
-extern pros::Controller master;
