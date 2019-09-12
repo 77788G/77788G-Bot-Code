@@ -3,7 +3,7 @@
 
 using namespace pros;
 
-void intakeControl(){
+void intakeControl(void* param){
   while(true){
     if(master.get_digital_new_press(E_CONTROLLER_DIGITAL_R1)){
       intaking = !intaking;

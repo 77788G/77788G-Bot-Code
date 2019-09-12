@@ -4,6 +4,7 @@
 using namespace pros;
 
 void opcontrol(){
+  Task intaker(intakeControl);
   while(true){
     int leftY = master.get_analog(E_CONTROLLER_ANALOG_LEFT_Y);
     int leftX = master.get_analog(E_CONTROLLER_ANALOG_LEFT_X);
