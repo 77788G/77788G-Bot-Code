@@ -29,3 +29,7 @@ extern bool controlL1;
 extern bool controlL2;
 extern bool controlR1;
 extern bool controlR2;
+
+extern bool intaking;
+extern bool tempIntaking;
+extern bool intakeOpen;

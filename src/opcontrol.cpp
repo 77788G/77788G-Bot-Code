@@ -13,8 +13,9 @@ void opcontrol(){
 
     lift.move((controlL1 - controlL2)*100);
 
-    if(controlR1) intaking = !intaking;
-    intakeL.move(200*intaking);
+    angle.move((controlR1 - controlR2)*30);
+
     intakeR.move(200*intaking);
+    intakeL.move(200*intaking);
   }
 }
