@@ -4,7 +4,6 @@
 using namespace pros;
 
 void opcontrol(){
-  bool intaking = false;
   while(true){
     chassisLF.move(leftY);
     chassisLB.move(leftY);
