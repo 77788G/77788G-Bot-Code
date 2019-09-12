@@ -10,9 +10,9 @@ void opcontrol(){
     chassisRF.move(rightY);
     chassisRB.move(rightY);
 
-    lift.move((controlL1 - controlL2)*100);
+    lift.move((controlR2 - controlL2)*100);
 
-    angle.move((controlR1 - controlR2)*30);
+    angle.move((controlL1 - controlRight)*30);
 
     intakeR.move(200*intaking);
     intakeL.move(200*intaking);

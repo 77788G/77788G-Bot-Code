@@ -5,7 +5,7 @@ using namespace pros;
 
 void intakeControl(){
   while(true){
-    if(master.get_digital_new_press(E_CONTROLLER_DIGITAL_RIGHT)){
+    if(master.get_digital_new_press(E_CONTROLLER_DIGITAL_R1)){
       intaking = !intaking;
       intakeOpen = false;
     }
