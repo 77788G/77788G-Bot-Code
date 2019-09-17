@@ -42,7 +42,7 @@ void opcontrol(){
 
     chassisL.move(leftY);
     chassisR.move(rightY);
-    chassisM.move(rightY);
+    chassisM.move((rightY + leftY)/2);
 
     lift.move((controlR2 - controlL2)*100);
 
