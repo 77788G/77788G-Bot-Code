@@ -40,10 +40,9 @@ void opcontrol(){
     controlR1 = master.get_digital(E_CONTROLLER_DIGITAL_R1);
     controlR2 = master.get_digital(E_CONTROLLER_DIGITAL_R2);
 
-    chassisLF.move(leftY);
-    chassisLB.move(leftY);
-    chassisRF.move(rightY);
-    chassisRB.move(rightY);
+    chassisL.move(leftY);
+    chassisR.move(rightY);
+    chassisM.move(rightY);
 
     lift.move((controlR2 - controlL2)*100);
 
