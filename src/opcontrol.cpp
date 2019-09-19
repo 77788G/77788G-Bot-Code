@@ -51,5 +51,18 @@ void opcontrol(){
 
     intakeR.move(200*intaking);
     intakeL.move(200*intaking);
+
+    if(controlA){
+      chassisLF.set_brake_mode(MOTOR_BRAKE_HOLD);
+      chassisRF.set_brake_mode(MOTOR_BRAKE_HOLD);
+      chassisRB.set_brake_mode(MOTOR_BRAKE_HOLD);
+      chassisLB.set_brake_mode(MOTOR_BRAKE_HOLD);
+    }
+    else{
+      chassisLF.set_brake_mode(MOTOR_BRAKE_COAST);
+      chassisRF.set_brake_mode(MOTOR_BRAKE_COAST);
+      chassisRB.set_brake_mode(MOTOR_BRAKE_COAST);
+      chassisLB.set_brake_mode(MOTOR_BRAKE_COAST);
+    }
   }
 }
