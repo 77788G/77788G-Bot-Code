@@ -49,20 +49,13 @@ void opcontrol(){
 
     angle.move((controlL1 - controlRight)*30);
 
-    intakeR.move(200*intaking);
-    intakeL.move(200*intaking);
-
-    if(controlA){
-      chassisLF.set_brake_mode(MOTOR_BRAKE_HOLD);
-      chassisRF.set_brake_mode(MOTOR_BRAKE_HOLD);
-      chassisRB.set_brake_mode(MOTOR_BRAKE_HOLD);
-      chassisLB.set_brake_mode(MOTOR_BRAKE_HOLD);
+    if(intaking){
+      intakeR.move(200);
+      intakeL.move(200);
     }
-    else{
-      chassisLF.set_brake_mode(MOTOR_BRAKE_COAST);
-      chassisRF.set_brake_mode(MOTOR_BRAKE_COAST);
-      chassisRB.set_brake_mode(MOTOR_BRAKE_COAST);
-      chassisLB.set_brake_mode(MOTOR_BRAKE_COAST);
+    else if(intakeOpen){
+      intakeR.move(150*controlY);
+      intakeL.move(150*controlY);
     }
   }
 }
