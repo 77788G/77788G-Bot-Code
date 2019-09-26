@@ -29,8 +29,8 @@ void opcontrol(){
     rightX = master.get_analog(E_CONTROLLER_ANALOG_RIGHT_X);
     controlA = master.get_digital(E_CONTROLLER_DIGITAL_A);
     controlB = master.get_digital(E_CONTROLLER_DIGITAL_B);
-    controlY = master.get_digital(E_CONTROLLER_DIGITAL_X);
-    controlX = master.get_digital(E_CONTROLLER_DIGITAL_Y);
+    controlY = master.get_digital(E_CONTROLLER_DIGITAL_Y);
+    controlX = master.get_digital(E_CONTROLLER_DIGITAL_X);
     controlUp = master.get_digital(E_CONTROLLER_DIGITAL_UP);
     controlDown = master.get_digital(E_CONTROLLER_DIGITAL_DOWN);
     controlLeft = master.get_digital(E_CONTROLLER_DIGITAL_LEFT);
@@ -49,13 +49,5 @@ void opcontrol(){
 
     angle.move((controlL1 - controlRight)*30);
 
-    if(intaking){
-      intakeR.move(200);
-      intakeL.move(200);
-    }
-    else if(intakeOpen){
-      intakeR.move(150*controlY);
-      intakeL.move(150*controlY);
-    }
   }
 }

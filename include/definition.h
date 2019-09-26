@@ -33,3 +33,4 @@ extern bool controlR2;
 extern bool intaking;
 extern bool tempIntaking;
 extern bool intakeOpen;
+extern int intakeSpeed;

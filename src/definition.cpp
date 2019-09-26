@@ -17,3 +17,4 @@ Motor angle(4, E_MOTOR_GEARSET_18, 0, E_MOTOR_ENCODER_DEGREES);
 bool intaking = false;
 bool tempIntaking = false;
 bool intakeOpen = false;
+int intakeSpeed = 0;
