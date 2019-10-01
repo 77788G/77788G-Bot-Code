@@ -7,8 +7,8 @@ void intakeControl(void* param){
    while(true){
      if(master.get_digital_new_press(E_CONTROLLER_DIGITAL_Y)){
        intaking = 0;
-       intakeR.move_relative(-30, 150);
-       intakeL.move_relative(-30, 150);
+       intakeR.move_relative(-60, 150);
+       intakeL.move_relative(-90, 150);
      }
      else if (!controlY){
        intakeSpeed = 200 * intaking;
