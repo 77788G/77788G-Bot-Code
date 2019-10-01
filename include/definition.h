@@ -6,7 +6,8 @@ extern pros::Motor chassisR;
 extern pros::Motor chassisM;
 extern pros::Motor intakeL;
 extern pros::Motor intakeR;
-extern pros::Motor lift;
+extern pros::Motor liftR;
+extern pros::Motor liftL;
 extern pros::Motor angle;
 
 extern pros::Controller master;
