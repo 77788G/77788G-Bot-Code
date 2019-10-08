@@ -68,7 +68,7 @@ void disabled(void);
 void competition_initialize(void);
 void opcontrol(void);
 void intakeControl(void* param);
-void driveStraight(int dist, int speed);
+void simultaneous(int dist, int speed);
 void turnL(int dist, int speed);
 void turnR(int dist, int speed);
 void rightInd(int dist, int speed);
