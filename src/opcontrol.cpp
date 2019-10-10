@@ -47,7 +47,7 @@ void opcontrol(){
     liftL.move((controlR2 - controlL2)*100);
     liftR.move((controlR2 - controlL2)*100);
 
-    angle.move((controlL1 - controlRight)*70);
+    angle.move((controlRight - controlL1)*70);
 
   }
 }
