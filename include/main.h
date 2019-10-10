@@ -78,10 +78,11 @@ void rightInd(int dist, int speed);
 void leftInd(int dist, int speed);
 void startIntake();
 void stopIntake();
+void openIntake();
 
-void on_center_button();
-void on_right_button();
-void on_left_button();
+void doSkills();
+void doRed();
+void doBlue();
 void blueAuton();
 void redAuton();
 

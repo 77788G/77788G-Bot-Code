@@ -3,15 +3,15 @@
 
 using namespace pros;
 
-void on_left_button(){
+void doBlue(){
   autonSelect = 1;
 }
 
-void on_center_button(){
+void doSkills(){
   autonSelect = 2;
 }
 
-void on_right_button(){
+void doRed(){
   autonSelect = 3;
 }
 
@@ -71,4 +71,11 @@ void startIntake(){
 void stopIntake(){
   intakeL.move(0);
   intakeR.move(0);
+}
+
+void openIntake(){
+  intakeR.move_relative(-60, 100);
+  intakeL.move_relative(-60, 100);
+  intakeL.move(-60);
+  intakeR.move(-60);
 }
