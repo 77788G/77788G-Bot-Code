@@ -34,3 +34,5 @@ extern bool intaking;
 extern bool tempIntaking;
 extern bool intakeOpen;
 extern int intakeSpeed;
+
+extern int autonSelect;

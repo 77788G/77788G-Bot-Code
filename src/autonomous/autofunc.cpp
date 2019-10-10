@@ -3,6 +3,18 @@
 
 using namespace pros;
 
+void on_left_button(){
+  autonSelect = 1;
+}
+
+void on_center_button(){
+  autonSelect = 2;
+}
+
+void on_right_button(){
+  autonSelect = 3;
+}
+
 void tareMotors(){
   chassisL.tare_position();
   chassisR.tare_position();

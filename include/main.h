@@ -67,7 +67,9 @@ void initialize(void);
 void disabled(void);
 void competition_initialize(void);
 void opcontrol(void);
+
 void intakeControl(void* param);
+
 void tareMotors();
 void simultaneous(int dist, int speed);
 void turnL(int dist, int speed);
@@ -76,6 +78,12 @@ void rightInd(int dist, int speed);
 void leftInd(int dist, int speed);
 void startIntake();
 void stopIntake();
+
+void on_center_button();
+void on_right_button();
+void on_left_button();
+void blueAuton();
+void redAuton();
 
 #ifdef __cplusplus
 }
