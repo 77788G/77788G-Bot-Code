@@ -70,6 +70,8 @@ void opcontrol(void);
 
 void intakeControl(void* param);
 
+void anglerControl(void* param);
+
 void tareMotors();
 void simultaneous(int dist, int speed);
 void turnL(int dist, int speed);

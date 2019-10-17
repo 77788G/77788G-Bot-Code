@@ -35,4 +35,6 @@ extern bool tempIntaking;
 extern bool intakeOpen;
 extern int intakeSpeed;
 
+extern bool angling;
+
 extern int autonSelect;

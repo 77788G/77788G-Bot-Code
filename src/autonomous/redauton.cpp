@@ -4,7 +4,9 @@
 using namespace pros;
 
 void redAuton(){
-  startIntake();
+  simultaneous(-800, 150);
+  simultaneous(400, 150);
+/*  startIntake();
   simultaneous(750, 100);
   stopIntake();
   simultaneous(-500, 100);
@@ -14,5 +16,5 @@ void redAuton(){
   openIntake();
   angle.move_relative(20, 70);
   simultaneous(20, 50);
-  simultaneous(-100, 100);
+  simultaneous(-100, 100); */
 }

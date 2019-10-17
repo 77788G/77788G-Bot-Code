@@ -22,6 +22,7 @@ bool controlR2;
 
 void opcontrol(){
   Task intaker(intakeControl);
+  //Task angler(anglerControl);
   while(true){
     leftY = master.get_analog(E_CONTROLLER_ANALOG_LEFT_Y);
     leftX = master.get_analog(E_CONTROLLER_ANALOG_LEFT_X);
@@ -47,7 +48,9 @@ void opcontrol(){
     liftL.move((controlR2 - controlL2)*100);
     liftR.move((controlR2 - controlL2)*100);
 
-    angle.move((controlRight - controlL1)*70);
+    if(angle.get_position() < 0) angle.move(40);
+    else if(angle.get_position() < 800) angle.move((-controlRight + controlL1) * 80);
+    else angle.move((-controlRight + controlL1) * 40);
 
   }
 }
