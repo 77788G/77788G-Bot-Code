@@ -49,8 +49,9 @@ void opcontrol(){
     liftR.move((controlR2 - controlL2)*100);
 
     if(angle.get_position() < 0) angle.move(40);
-    else if(angle.get_position() < 800) angle.move((-controlRight + controlL1) * 80);
-    else angle.move((-controlRight + controlL1) * 40);
+    else if(controlRight) angle.move(-80);
+    else if(angle.get_position() < 800) angle.move((controlL1) * 80);
+    else angle.move((controlL1) * 40);
 
   }
 }
