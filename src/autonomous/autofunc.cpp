@@ -35,7 +35,7 @@ void turnL(int dist, int speed){
   tareMotors();
   chassisL.move_relative(-dist, speed);
   chassisR.move_relative(dist,  speed);
-  while(fabs(chassisL.get_position() - dist) >= 25 ||
+  while(fabs(chassisL.get_position() + dist) >= 25 ||
         fabs(chassisR.get_position() - dist) >= 25) delay(20);
 }
 
@@ -44,7 +44,7 @@ void turnR(int dist, int speed){
   chassisL.move_relative(dist,  speed);
   chassisR.move_relative(-dist, speed);
   while(fabs(chassisL.get_position() - dist) >= 25 ||
-        fabs(chassisR.get_position() - dist) >= 25) delay(20);
+        fabs(chassisR.get_position() + dist) >= 25) delay(20);
 }
 
 void rightInd(int dist, int speed){
@@ -78,4 +78,32 @@ void openIntake(){
   intakeL.move_relative(-60, 100);
   intakeL.move(-60);
   intakeR.move(-60);
+}
+
+void correctIntake(){
+  intakeR.move(0);
+  intakeL.move_relative(-60, 100);
+  delay(200);
+  intakeL.move(200);
+  intakeR.move(200);
+  delay(500);
+  intakeL.move(0);
+  intakeR.move(0);
+}
+
+void autonAngle(int dist, int speed){
+  angle.tare_position();
+  angle.move_relative(dist, speed);
+  while(fabs(angle.get_position() - dist) >= 25) delay(20);
+}
+
+void universalBeginning(){
+  simultaneous(150, 200);
+  simultaneous(-150, 175);
+  startIntake();
+  simultaneous(1050, 75);
+  delay(100);
+  stopIntake();
+  delay(100);
+  simultaneous(-600, 125);
 }

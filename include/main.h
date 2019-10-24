@@ -81,6 +81,9 @@ void leftInd(int dist, int speed);
 void startIntake();
 void stopIntake();
 void openIntake();
+void correctIntake();
+void universalBeginning();
+void autonAngle(int dist, int speed);
 
 void doSkills();
 void doRed();

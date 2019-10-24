@@ -4,17 +4,18 @@
 using namespace pros;
 
 void blueAuton(){
-  simultaneous(-800, 150);
-  simultaneous(400, 150);
-/*  startIntake();
-  simultaneous(750, 100);
+  universalBeginning();
+  leftInd(95, 100);
+  simultaneous(500, 75);
+  startIntake();
+  simultaneous(200, 75);
+  simultaneous(-700, 100);
   stopIntake();
-  simultaneous(-500, 100);
-  turnL(135, 100);
-  simultaneous(100, 75);
-  angle.move_relative(100, 70);
+  turnL(470, 75);
+  simultaneous(300, 50);
+  autonAngle(850, 80);
   openIntake();
-  angle.move_relative(20, 70);
-  simultaneous(20, 50);
-  simultaneous(-100, 100); */
+  autonAngle(150, 40);
+  simultaneous(50, 25);
+  simultaneous(-200, 75);
 }

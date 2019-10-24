@@ -45,8 +45,8 @@ void opcontrol(){
     chassisL.move(leftY);
     chassisM.move((leftY+rightY)/2);
 
-    liftL.move((controlR2 - controlL2)*100);
-    liftR.move((controlR2 - controlL2)*100);
+    liftL.move((controlR2 - controlL2)*100 + 10);
+    liftR.move((controlR2 - controlL2)*100 + 10);
 
     if(angle.get_position() < 0) angle.move(40);
     else if(controlRight) angle.move(-80);
