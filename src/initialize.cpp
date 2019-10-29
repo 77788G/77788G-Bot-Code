@@ -18,6 +18,8 @@ void initialize() {
 	lcd::register_btn2_cb(doRed);
 }
 
+//this is a test (an certified hood moment)
+
 void disabled() {}
 
 void competition_initialize() {}
