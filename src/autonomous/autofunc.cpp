@@ -92,9 +92,9 @@ void correctIntake(){
 }
 
 void autonAngle(int dist, int speed){
-  angle.tare_position();
+  float startingAngle = angle.get_position();
   angle.move_relative(dist, speed);
-  while(fabs(angle.get_position() - dist) >= 25) delay(20);
+  while(fabs(angle.get_position() - dist - startingAngle) >= 25) delay(20);
 }
 
 void universalBeginning(){
