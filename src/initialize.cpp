@@ -4,7 +4,7 @@
 using namespace pros;
 
 void initialize() {
-	autonSelect = 1;
+	autonSelect = 0;
 	liftR.set_brake_mode(E_MOTOR_BRAKE_HOLD);
 	liftL.set_brake_mode(E_MOTOR_BRAKE_HOLD);
 	intakeL.set_brake_mode(E_MOTOR_BRAKE_HOLD);

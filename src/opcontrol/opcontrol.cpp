@@ -50,6 +50,7 @@ void opcontrol(){
 
     if(angle.get_position() < 0) angle.move(40);
     else if(controlRight) angle.move(-80);
-    else angle.move((controlL1) * 80);
+    else if(angle.get_position() < 800) angle.move((controlL1) * 80);
+    else angle.move(controlL1 * 40);
   }
 }

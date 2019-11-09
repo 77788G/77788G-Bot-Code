@@ -13,9 +13,9 @@ void blueAuton(){
   stopIntake();
   turnL(470, 75);
   simultaneous(300, 50);
-  autonAngle(850, 80);
+  autonAngle(800, 100);
   openIntake();
-  autonAngle(150, 40);
+  autonAngle(200, 40);
   simultaneous(50, 25);
-  simultaneous(-200, 75);
+  simultaneous(-500, 75);
 }

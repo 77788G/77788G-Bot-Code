@@ -99,9 +99,9 @@ void autonAngle(int dist, int speed){
 
 void universalBeginning(){
   simultaneous(150, 200);
-  simultaneous(-150, 175);
+  simultaneous(-120, 175);
   startIntake();
-  simultaneous(1050, 75);
+  simultaneous(1030, 95);
   delay(100);
   stopIntake();
   delay(100);
