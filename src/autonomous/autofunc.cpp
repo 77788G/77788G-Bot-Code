@@ -74,8 +74,8 @@ void stopIntake(){
 }
 
 void openIntake(){
-  intakeR.move_relative(-60, 100);
-  intakeL.move_relative(-60, 100);
+  intakeR.move_relative(-50, 100);
+  intakeL.move_relative(-50, 100);
   intakeL.move(-60);
   intakeR.move(-60);
 }
@@ -98,12 +98,12 @@ void autonAngle(int dist, int speed){
 }
 
 void universalBeginning(){
-  simultaneous(150, 200);
-  simultaneous(-120, 175);
+  simultaneous(250, 200);
+  simultaneous(-140, 175);
   startIntake();
-  simultaneous(1030, 95);
+  simultaneous(1030, 70);
   delay(100);
   stopIntake();
   delay(100);
-  simultaneous(-600, 125);
+  simultaneous(-200, 125);
 }
